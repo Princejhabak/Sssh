@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/road_map"
+        android:title="Road Map"
+        android:icon="@drawable/hybrid"/>
+
+    <item
+        android:id="@+id/terrain"
+        android:title="Terrain"
+        android:icon="@drawable/terrain"/>
+
+    <item
+        android:id="@+id/satellite"
+        android:title="Satellite"
+        android:icon="@drawable/satellite"/>
+
+    <item
+        android:id="@+id/show_geofences_list"
+        android:title="Show Geofences"
+        android:icon="@drawable/geofences"/>
+
+</menu>

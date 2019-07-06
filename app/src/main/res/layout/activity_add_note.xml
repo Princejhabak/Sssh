@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="3dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/titlee" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="8dp"
+                android:hint="Title"
+                android:inputType="textCapWords"
+                android:paddingLeft="45dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/diameter" />
+
+            <EditText
+                android:id="@+id/radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:hint="Radius "
+                android:inputType="number"
+                android:paddingStart="45dp" />
+
+            <TextView
+                android:id="@+id/label_weight_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="16dp"
+                android:paddingTop="13dp"
+                android:text="m"
+                android:textColor="#d210cac9"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/notes"
+            android:drawablePadding="16dp"
+            android:layout_marginBottom="48dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="8dp"
+            android:text="Please select a mode"
+            android:textColor="#d210cac9"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/mode_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/general_mode"
+                android:paddingLeft="10dp"
+                android:text="General" />
+
+            <RadioButton
+                android:id="@+id/mode_silent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/silent_mode"
+                android:paddingLeft="10dp"
+                android:text="Silent" />
+
+            <RadioButton
+                android:id="@+id/mode_airplane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/vibrate_mode"
+                android:paddingLeft="10dp"
+                android:text="Vibrate" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>
